@@ -1,0 +1,46 @@
+.TH internsctl 1 "October 2023" "v0.1.0"
+.SH NAME
+internsctl - Brief description of the script
+.SH SYNOPSIS
+\fBinternsctl\fR [OPTIONS] <ARGUMENTS>
+.SH DESCRIPTION
+The \fBinternsctl\fR script provides various functions for obtaining system information and managing users and files. It accepts a set of options and arguments to perform different tasks.
+.SH OPTIONS
+.TP
+\fB--help\fR
+Display the help message and usage information.
+.TP
+\fB--version\fR
+Display the script version.
+.TP
+\fBcpu\fR \fBgetinfo\fR
+Display CPU information.
+.TP
+\fBmemory\fR \fBgetinfo\fR
+Display memory information.
+.TP
+\fBuser list\fR
+Display a list of all users on the system.
+.TP
+\fBuser list --sudo-only\fR
+Display a list of users with sudo privileges.
+.TP
+\fBuser create <username>\fR
+Create a new user with the specified username.
+.TP
+\fBfile\fR \fBgetinfo <filename>\fR
+Display information about a file, including size, permissions, owner, and modification time.
+.TP
+\fBfile\fR \fBgetinfo [OPTIONS] <filename>\fR
+Display information about a file with optional flags.
+.SH EXAMPLES
+Display CPU information:
+.nf
+internsctl cpu getinfo
+.fi
+Display information about a file:
+.nf
+internsctl file getinfo myfile.txt
+.fi
+.SH AUTHOR
+joban9872@gmail.com
